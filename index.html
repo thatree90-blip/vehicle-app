@@ -3,7 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#14324F">
+<meta name="theme-color" content="#1E3250">
+<!-- ไอคอนบนหน้าจอโฮม (BGM) -->
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ใช้รถส่วนกลาง">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>ระบบใช้รถส่วนกลาง</title>
 <style>
   html, body { margin: 0; height: 100%; background: #F4F6F8; }
@@ -17,7 +25,7 @@
 <noscript>กรุณาเปิด JavaScript เพื่อใช้งานระบบ</noscript>
 <script>
   // ลิงก์เว็บแอป (Deploy ของ Apps Script)
-  var EXEC_URL = 'https://script.google.com/macros/s/AKfycbzOQ2oXxZdR9p6L7stbfj5Q46DQ_x5hdruzOqdVeGYMrVpLqiZjSHIEvGVnTtfqzWs/exec';
+  var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwBLpUfxyZj0BqFLddcIWWbgtgn7GlxbTSv0TYDBrGAKPaqGTj156sUMUGGNEw3Wem4/exec';
   // ส่งต่อพารามิเตอร์ลิงก์อนุมัติ (?page=approve&id=...) เข้าไปในแอป
   var q = new URLSearchParams(location.search), p = new URLSearchParams();
   ['page', 'id'].forEach(function (k) {
